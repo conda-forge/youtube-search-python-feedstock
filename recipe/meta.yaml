@@ -1,5 +1,5 @@
 {% set name = "youtube-search-python" %}
-{% set version = "1.6.1" %}
+{% set version = "1.6.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/youtube-search-python-{{ version }}.tar.gz
-  sha256: c7afe70e1ac8e871341d7fb15f5246aac35fd80fec10d7a96d46df2aad608bd0
+  sha256: 3de5a2d5eca05128145d9ebc6d4278e08a1f7cd0e67b4e89351f67b3a9e3a8c5
 
 build:
   number: 0
