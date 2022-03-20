@@ -5,7 +5,7 @@ Home: https://github.com/alexmercerind/youtube-search-python
 
 Package license: MIT
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/youtube-search-python-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/youtube-search-python-feedstock/blob/main/LICENSE.txt)
 
 Summary: Search for YouTube videos, channels & playlists & get video information using link WITHOUT YouTube Data API v3
 
@@ -15,8 +15,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15058&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/youtube-search-python-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15058&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/youtube-search-python-feedstock?branchName=main">
       </a>
     </td>
   </tr>
