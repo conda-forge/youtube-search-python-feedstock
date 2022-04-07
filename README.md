@@ -9,6 +9,8 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/youtube-search-
 
 Summary: Search for YouTube videos, channels & playlists & get video information using link WITHOUT YouTube Data API v3
 
+Development: https://github.com/alexmercerind/youtube-search-python
+
 Current build status
 ====================
 
