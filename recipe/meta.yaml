@@ -7,21 +7,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/youtube-search-python-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/youtube-search-python-{{ version }}.tar.gz
   sha256: 4568d1d769ecd7eb4bb8365f04eec6e364c5f70eec7b3765f543daebb135fcf5
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - setuptools
+    - python {{ python_min }}
   run:
     - httpx >=0.14.2
-    - python >=3.6
+    - python >={{ python_min }}
     - yt-dlp
 
 test:
@@ -32,6 +33,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/alexmercerind/youtube-search-python
