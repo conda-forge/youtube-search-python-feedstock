@@ -13,11 +13,12 @@ source:
 build:
   number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - pip
+    - setuptools
     - python {{ python_min }}
   run:
     - httpx >=0.14.2
